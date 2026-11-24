@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><title>HSA Tracker – Privacy policy</title>
+<h1>HSA Tracker – Privacy policy</h1>
+<p>Last updated: 2026-11-24</p>
+<p>HSA Tracker is a private, self-hosted tool used by a single household to organize its own health savings account (HSA) receipts. It is not offered to the public, and only the household's own Google account signs in to it.</p>
+
+<h2>What data the app accesses</h2>
+<ul>
+<li><b>Google Drive</b> (<code>drive.file</code>): only the folders, receipt files and spreadsheet that the app itself creates. It cannot see any other Drive content.</li>
+<li><b>Gmail</b> (<code>gmail.modify</code>): the household's dedicated intake inbox, to read receipts and bills forwarded to it and to label processed messages.</li>
+<li><b>Basic profile</b> (<code>openid</code>, <code>email</code>): to confirm that the expected household account gave consent.</li>
+</ul>
+
+<h2>How the data is used</h2>
+<p>Receipts, bills and insurance statements are read to extract the date, provider, patient, amount and HSA eligibility, and are filed in the household's own Drive and spreadsheet. Receipt images and message contents are sent to the Anthropic API solely to perform this extraction. The household receives notifications through its own private Telegram bot.</p>
+
+<h2>Storage and sharing</h2>
+<p>Data is stored on the household's own server and in its own Google Drive. Encrypted backups are kept in a private Backblaze B2 bucket. Google OAuth tokens are stored encrypted. Data is not sold, not used for advertising, and not shared with anyone except the service providers named above.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>HSA Tracker's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access and deleting data</h2>
+<p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Deleting the app's Drive folder and the server database removes the stored data.</p>
+
+<h2>Contact</h2>
+<p>hakala.hsa@gmail.com</p>
+<p><a href="./">Home</a></p>
